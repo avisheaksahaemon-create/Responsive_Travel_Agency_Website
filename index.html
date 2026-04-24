@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nechia Passage Holidays | Premium Travel Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-map-marked-al"></i> NECHIA PASSAGE
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="#flight"><i class="fas fa-plane"></i> Flight</a></li>
+            <li><a href="#hotel"><i class="fas fa-bed"></i> Hotel</a></li>
+            <li><a href="#visa"><i class="fas fa-passport"></i> Visa</a></li>
+            <li><a href="#transport"><i class="fas fa-bus"></i> Transport</a></li>
+            
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Others <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-shield-heart"></i> Insurance</a>
+                    <a href="#"><i class="fas fa-camera-retro"></i> Photo Tours</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="authBtn" class="btn-login">Account</button>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <video autoplay muted loop playsinline class="back-video">
+            <source src="C:\Users\Emon\Desktop\Maldiv 2\4010511-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content">
+            <h1 class="rainbow-text">The Art of Discovery<div class="cassiopeia-wrap">
+                <span class="star s1"></span>
+                <span class="star s2"></span>
+                <span class="star s3"></span>
+                <span class="star s4"></span>
+                <span class="star s5"></span>
+            </div></h1>
+            <p class="hero-subtitle">Curated travel experiences designed for the modern explorer.</p>
+
+            <div class="search-widget slide-up">
+                <div class="search-tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'flights')"><i class="fas fa-plane"></i> Flights</button>
+                    <button class="tab-btn" onclick="openTab(event, 'hotels')"><i class="fas fa-hotel"></i> Hotels</button>
+                    <button class="tab-btn" onclick="openTab(event, 'visa')"><i class="fas fa-passport"></i> Visa</button>
+                </div>
+                
+                <div class="search-form">
+                    <div class="input-wrap">
+                        <label><i class="fas fa-location-dot"></i> From</label>
+                        <input type="text" placeholder="Departure City">
+                    </div>
+                    <div class="input-wrap">
+                        <label><i class="fas fa-map-pin"></i> To</label>
+                        <input type="text" placeholder="Where to?">
+                    </div>
+                    <div class="input-wrap">
+                        <label><i class="fas fa-calendar-day"></i> Date</label>
+                        <input type="date">
+                    </div>
+                    <button class="hero-search-btn">
+                        <span>Search</span>
+                        <i class="fas fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </header>
+
+    <section class="flight-section" id="flight">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Popular Flight Deals</h2>
+                <p>Grab the best prices for your next adventure.</p>
+            </div>
+            <div class="flight-grid">
+                <div class="flight-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=500&q=80" alt="Sydney">
+                        <span class="price-tag">From $499</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="route"><h3>Sydney</h3> <i class="fas fa-arrow-right"></i> <h3>Australia</h3></div>
+                        <p class="flight-meta"><i class="fas fa-calendar-days"></i> Dec 15 - Jan 05</p>
+                        <div class="card-footer"><span>Round Trip</span><button class="book-small">Book Now</button></div>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=500&q=80" alt="London">
+                        <span class="price-tag">From $350</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="route"><h3>London</h3> <i class="fas fa-arrow-right"></i> <h3>UK</h3></div>
+                        <p class="flight-meta"><i class="fas fa-calendar-days"></i> Nov 20 - Nov 28</p>
+                        <div class="card-footer"><span>One Way</span><button class="book-small">Book Now</button></div>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=500&q=80" alt="Paris">
+                        <span class="price-tag">From $420</span>
+                    </div>
+                    <div class="card-info">
+                        <div class="route"><h3>Paris</h3> <i class="fas fa-arrow-right"></i> <h3>France</h3></div>
+                        <p class="flight-meta"><i class="fas fa-calendar-days"></i> Oct 10 - Oct 22</p>
+                        <div class="card-footer"><span>Round Trip</span><button class="book-small">Book Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotel-section" id="hotel">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Luxury Stays & Resorts</h2>
+                <p>Handpicked accommodations for an unforgettable rest.</p>
+            </div>
+            <div class="hotel-grid">
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=80" alt="Maldives">
+                        <span class="hotel-badge beachfront">Beachfront</span>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <h3>Azure Bay Resort</h3>
+                        <p class="hotel-location"><i class="fas fa-location-dot"></i> Maldives</p>
+                        <div class="hotel-amenities"><span>WiFi</span><span>Pool</span><span>Spa</span></div>
+                        <div class="hotel-footer">
+                            <span class="hotel-price"><strong>$210</strong> / night</span>
+                            <button class="btn-book-hotel">Check Availability</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Switzerland">
+                        <span class="hotel-badge premium">Premium</span>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+                        <h3>Grand Alpine Lodge</h3>
+                        <p class="hotel-location"><i class="fas fa-location-dot"></i> Switzerland</p>
+                        <div class="hotel-amenities"><span>Ski-in</span><span>Fireplace</span><span>Dining</span></div>
+                        <div class="hotel-footer">
+                            <span class="hotel-price"><strong>$345</strong> / night</span>
+                            <button class="btn-book-hotel">Check Availability</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Bali">
+                        <span class="hotel-badge inclusive">All-Inclusive</span>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <h3>Ubud Jungle Retreat</h3>
+                        <p class="hotel-location"><i class="fas fa-location-dot"></i> Bali, Indonesia</p>
+                        <div class="hotel-amenities"><span>Eco-Friendly</span><span>Yoga</span><span>Cafe</span></div>
+                        <div class="hotel-footer">
+                            <span class="hotel-price"><strong>$180</strong> / night</span>
+                            <button class="btn-book-hotel">Check Availability</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>NECHIA PASSAGE</h2>
+            <p>Your journey begins where the ordinary ends. Exploring the world, one passage at a time.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flight">Flights</a></li>
+                <li><a href="#hotel">Hotels</a></li>
+                <li><a href="#visa">Visa Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe for exclusive travel deals.</p>
+            <div class="subscribe-box">
+                <input type="email" placeholder="Your Email">
+                <button>Join</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="engineering-credit">
+            <span class="arrow left-arrow">&lt;</span>
+            Engineering By : <span class="engineer-name">অভিষেক সাহা ইমন</span>
+            <span class="arrow right-arrow">&gt;</span>
+        </div>
+        <p>&copy; 2026 Nechia Passage Holidays. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
